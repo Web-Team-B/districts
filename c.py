@@ -15,7 +15,7 @@ toll_to_time = toll / secondary_rate  # 통행료를 시간으로 변환
 print(f"Toll converted to time: {toll_to_time:.2f} seconds")
 
 # XML 파일 로드 및 TAZ 데이터 추출
-tree = ET.parse('yeoksam_district.xml')
+tree = ET.parse('districts/teheran_district.xml')
 root = tree.getroot()
 
 tazlist = [taz_sink.get("id") for taz in root.iter("taz") for taz_sink in taz.findall("tazSink")]
