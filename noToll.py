@@ -19,7 +19,8 @@ for edge in edges:
     edge_id = edge.getID()
     elen = traci.lane.getLength(edge_id + "_0")
     e_s = traci.lane.getMaxSpeed(edge_id + "_0")
-    traci.edge.setEffort(edge.getID(), (elen / e_s) * 0.7)
+    traci.edge.setEffort(edge_id, (elen / e_s) * 0.7)
+
 
 
 # 시뮬레이션 루프: 24시간 (86400초)로 설정    

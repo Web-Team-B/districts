@@ -46,7 +46,7 @@ while step < 86400:  # 24시간 시뮬레이션
 
     # 혼잡 시간대 Effort 조정 (07:00~21:00)
     if 25200 < step < 75600:
-        if step % 60 == 0:  # 매 60초마다 업데이트
+        if traci.simulation.getTime() % 60 == 0:  # 매 60초마다 업데이트
             for edge in edges:
                 base_effort = traci.edge.getTraveltime(edge.getID())
                 if edge.getID() in tazlist:
@@ -71,7 +71,7 @@ while step < 86400:  # 24시간 시뮬레이션
 
     # 비혼잡 시간대
     else:
-        if step % 60 == 0:
+        if traci.simulation.getTime() % 60 == 0:
             for edge in edges:
                 base_effort = traci.edge.getTraveltime(edge.getID())
                 traci.edge.setEffort(edge.getID(), base_effort)
