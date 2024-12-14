@@ -10,7 +10,7 @@ median_income = 2077892  # 월 소득 (원)
 hours_in_a_month = 30 * 8  # 한 달 기준 시간 (8시간 * 30일)
 hourly_rate = median_income / hours_in_a_month  # 시간당 임금
 secondary_rate = hourly_rate / 3600  # 초당 임금
-toll = 3000  # 통행료 (원)
+toll = 2000  # 통행료 (원)
 toll_to_time = toll / secondary_rate  # 통행료를 시간으로 변환
 print(f"Toll converted to time: {toll_to_time:.2f} seconds")
 
