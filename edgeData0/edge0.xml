@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-12-14 02:33:26 by Eclipse SUMO sumo Version 1.21.0
+<!-- generated on 2024-12-14 03:10:53 by Eclipse SUMO sumo Version 1.21.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -30,7 +30,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="11127"/>
+        <remote-port value="12818"/>
     </traci_server>
 
 </sumoConfiguration>
@@ -1154,3 +1154,4 @@
         <edge id="1220345901" sampledSeconds="1053.28" traveltime="28.76" overlapTraveltime="29.29" density="0.52" laneDensity="0.09" occupancy="0.04" waitingTime="0.00" timeLoss="98.69" speed="19.44" speedRelative="0.88" departed="4" arrived="7" entered="32" left="29" laneChangedFrom="36" laneChangedTo="36"/>
         <edge id="1230004503" sampledSeconds="6.02" traveltime="2.78" overlapTraveltime="3.02" density="0.03" laneDensity="0.01" occupancy="0.00" waitingTime="0.00" timeLoss="0.11" speed="21.31" speedRelative="0.96" departed="0" arrived="2" entered="2" left="0" laneChangedFrom="0" laneChangedTo="0"/>
     </interval>
+</meandata>
